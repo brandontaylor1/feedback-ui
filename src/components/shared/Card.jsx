@@ -1,7 +1,7 @@
 //Custom component that was created to be resused. The Children Prop is 
 //there so that anything that is within card will be rendered within the card
 
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 
 
 const Card = ({children, reverse}) => {
@@ -30,7 +30,7 @@ Card.defaultProps = {
     reverse: false,
 }
 
-Card.PropTypes = {
+Card.propTypes = {
     children: PropTypes.node.isRequired,
     reverse: PropTypes.bool,
 }

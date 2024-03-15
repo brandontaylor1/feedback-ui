@@ -17,7 +17,7 @@ const FeedbackItem = ({item, handleDelete}) => {
     )
 }
 
-FeedbackItem.PropTypes = {
+FeedbackItem.propTypes = {
     item: PropTypes.object.isRequired
 }
 

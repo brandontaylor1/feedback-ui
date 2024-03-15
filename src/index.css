@@ -118,6 +118,12 @@ input:focus {
   outline: none;
 }
 
+.message-div {
+  display: flex;
+  align-items: center;
+
+}
+
 .feedback-stats {
   color: #fff;
   display: flex;

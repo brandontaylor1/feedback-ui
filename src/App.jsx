@@ -4,6 +4,8 @@ import './App.css'
 import feedbackData from './data/feedbackData';
 import Header from './components/Header'
 import FeedbackList from './components/FeedbackList';
+import FeedbackStats from './components/FeedbackStats';
+import FeedbackForm from './components/FeedbackForm';
 
 const App = () => {
 
@@ -15,10 +17,16 @@ const App = () => {
     }
   }
 
+  const handleAddFeedback = (newFeedback) => {
+    return setFeedback([...feedback, newFeedback])
+  }
+
   return (
       <>
         <Header text="Feedback UI" />
         <div className='container'>
+        <FeedbackForm addFeedback={handleAddFeedback}/>
+        <FeedbackStats feedback={feedback} />
           <FeedbackList 
               feedback={feedback} 
               handleDelete={handleDelete}/>
